@@ -1,4 +1,4 @@
-from base import *
+from .base import *
 
 DEBUG = env('DEBUG', cast=bool)
 ALLOWED_HOSTS = ['ip-address', 'www.skeleton.com']
