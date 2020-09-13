@@ -1,4 +1,4 @@
-from base import *
+from .base import *
 
 DEBUG = True
 
@@ -17,7 +17,7 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.timer.TimerPanel',
     'debug_toolbar.panels.settings.SettingsPanel',
     'debug_toolbar.panels.headers.HeadersPanel',
-    'debug_toolbar.panels.requests.RequestPanel',
+    'debug_toolbar.panels.request.RequestPanel',
     'debug_toolbar.panels.sql.SQLPanel',
     'debug_toolbar.panels.staticfiles.StaticFilesPanel',
     'debug_toolbar.panels.templates.TemplatesPanel',
@@ -42,5 +42,5 @@ DATABASES = {
     }
 }
 
-#if __name__ == '__main__':
-#    pass
+STRIPE_PUBLIC_KEY = env('STRIPE_TEST_PUBLIC_KEY')
+STRIPE_SECRET_KEY = env('STRIPE_TEST_SECRET_KEY')
