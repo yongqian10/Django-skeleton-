@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 TEMPLATES_DIR = Path(__file__).resolve().parent.parent.parent.joinpath('templates')
 STATICFILES_DIRS = [Path(__file__).resolve().parent.parent.parent.joinpath('static')]
 DATABASE_DIR = Path(__file__).resolve().parent.parent.parent.joinpath('db.sqlite3')
-print(f'database dir is {DATABASE_DIR}')
+print(f'database dir is {STATICFILES_DIRS}')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
